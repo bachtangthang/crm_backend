@@ -19,7 +19,7 @@ class UserRepository {
   async getById(id: number) {
     const databaseResponse = await this.databaseService.runQuery(
       `
-      SELECT * FROM users WHERE id=$1 #######################
+      SELECT * FROM users WHERE id=$1
     `,
       [id],
     );
